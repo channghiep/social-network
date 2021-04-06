@@ -1,0 +1,98 @@
+.public-profile-body {
+    margin: auto;
+    margin-bottom: 80px;
+    padding-top: 100px;
+}
+
+.public-profile-body .posts {
+    min-height: 240px;
+}
+
+.public-profile-body .profile-resume {
+    width: 100%;
+}
+
+.public-profile-body .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.public-profile-body .profile-img img {
+    width: 100%;
+    height: auto;
+}
+
+.follow-user-btn {
+    background-color: #9FC86A;
+    width: 160px;
+    height: 36px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 18px;
+}
+
+.follow-user-btn:hover {
+    background-color: #B5C4A3;
+}
+
+.follow-user-btn p {
+    color: #FFF;
+    padding-top: 7px;
+    font-weight: 600!important;
+}
+
+.public-profile-body .profile-statistic {
+    max-width: 900px;
+    margin: auto;
+    font-weight: 800;
+}
+
+.public-profile-body .profile-bio {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.public-profile-body .postList-posts {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.public-profile-body .postList-posts .linkCont {
+    margin-bottom: 30px;
+}
+
+.public-profile-body .postList-title {
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 1232px) {
+
+    .public-profile-body .list .post-heading-top {
+        grid-template-rows: 30px 90px 40px;
+    }
+
+}
+
+@media only screen and (max-width: 838px) {
+
+    .public-profile-body .post-headingL {
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 762px) {
+
+    .public-profile-body .posts {
+        height: auto!important;
+    }
+
+    .public-profile-body .post-headingL {
+        grid-template-rows: 80px 160px;
+    }
+
+}

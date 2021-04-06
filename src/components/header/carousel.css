@@ -1,0 +1,239 @@
+.carousel {
+    background-image: url('../assets/carouselImg.jpg');
+    /* max-width: 1920px;
+    max-height: auto; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: 50%;
+}
+
+/* .carousel-caption{
+    text-align: left!important;
+} */
+
+.breakCont {
+    height: calc(100vh - 140px);
+    padding: 0 100px 0 100px;
+
+    display: grid;
+    grid-template-rows: 60% 8% 32%;
+    align-items: end;
+
+    color: #FFF;
+    background-color: rgba(1,1,1,.25);
+}
+
+.breakCont h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.breakingTitle p {
+    background-color: #DE3F42;
+    width: 204px;
+    margin-left: -10px;
+    padding-left: 10px;
+}
+
+.breakingTop {
+    display: grid;
+    grid-template-columns: auto 1fr 50%;
+    align-items: center;
+
+    height: 100%;
+}
+
+.breakingTop p {
+    margin: 0 20px 0 0;
+}
+
+.post-reactions-break {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-reactions-break div {
+    display: flex;
+}
+
+.post-reactions-break img {
+    width: 24px;
+    margin-right: 2px;
+}
+
+.post-reactions-break > div:nth-of-type(2) img {
+    padding-bottom: 2px;
+}
+
+.post-reactions-break > div:nth-of-type(3) img {
+    padding-top: 2px;
+}
+
+.breakCont .content {
+    align-self: start;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.breakCont .content .read {
+    margin-top: 10px;
+}
+
+.breakCont .content .read:hover {
+    color: #DE3F42;
+}
+
+@media only screen and (max-width: 1160px) {
+
+    .breakCont {
+        height: calc(100vh - 200px);
+        display: grid;
+        grid-template-rows: 50% 100px auto;
+    }
+
+    .breakCont h1 {
+        font-size: 36px;
+    }
+
+    .breakCont .content {
+        font-size: 18px;
+    }
+
+    .breakingTop {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 50px 50px;
+        grid-template-areas:
+        "name date"
+        "react react";
+    }
+
+    .breakingTop>p {
+        margin-top: 16px;
+    }
+
+    .breakingTop p.subheading {
+        grid-area: name;
+    }
+
+    .breakingTop p:nth-of-type(2) {
+        grid-area: date;
+    }
+
+    .post-reactions-break {
+        grid-area: react;
+    }
+
+    .post-reaction-break img {
+        padding-top: 10px;
+    }
+   
+}
+
+@media only screen and (max-width: 960px) {
+
+    .breakCont {
+        height: calc(100vh - 120px);
+    }
+
+    .breakingTop p {
+        font-size: 12pt;
+    }
+
+    .post-reactions-break img {
+        width: 20px;
+    }
+
+    .post-reactions-break div {
+        align-items: center;
+    }
+
+    .breakCont .content {
+        font-size: 12pt;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .breakCont {
+        padding: 0 10px 0 30px;
+        display: grid;
+        grid-template-rows: 54% 80px auto;
+    }
+
+    .breakingTitle {
+        align-self: start;
+        margin-top: 140px;
+    }
+
+    .breakingTitle p {
+        background-color: #DE3F42;
+        width: 120px;
+        margin-left: -10px;
+        padding-left: 10px;
+
+        font-size: 10pt;
+    }
+
+    .breakCont h1 {
+        font-size: 18pt;
+    }
+
+    .breakingTop {
+        grid-template-rows: 40px 40px;
+    }
+    
+    .breakingTop p {
+        font-size: 10pt;
+    }
+
+    .breakCont .content {
+        font-size: 10pt;
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .breakingTitle {
+        align-self: start;
+        margin-top: 100px;
+    }
+
+    .breakCont h1 {
+        font-size: 12pt;
+    }
+
+    .breakCont .content .read {
+        margin-top: 4px;
+    }
+
+}
+
+/* @media only screen and (max-width: 1280px) {
+   
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 799px) {
+    .breakingTop{
+        display: grid;
+        grid-template-columns: auto;
+        width: 50%;
+    }
+    .breakCont{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 100px;
+        color:white;
+    }
+}
+
+.breakCont .content{
+    margin-right: 400px;
+} */

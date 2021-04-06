@@ -1,0 +1,480 @@
+.profile-body {
+    margin-left: 330px;
+    margin-right: 30px;
+    padding-top: 120px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.profile-body h1, .profile-body h2 , .profile-body p, .profile-body span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.profile-body p {
+    color: #1D1E18;
+}
+
+.profile-resume {
+    width: 60%;
+    height: auto;
+
+    padding: 40px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.profile-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.profile-img .change-profile-img {
+    background-color: #BEBEBE;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    border-radius: 18px;
+    margin-left: -20px;
+}
+
+.profile-img .change-profile-img svg {
+    fill: #FFF;
+    margin-top: 5px;
+}
+
+.profile-name {
+    margin-top: 30px!important;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #DF3E43;
+}
+
+.edit-profile-btn {
+    background-color: #DF3E43;
+    width: 160px;
+    height: 36px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 18px;
+}
+
+.edit-profile-btn:hover {
+    background-color: #E0565A;
+}
+
+.edit-profile-btn p {
+    color: #FFF;
+    padding-top: 7px;
+    font-weight: 600!important;
+}
+
+.profile-statistic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 60px;
+}
+
+.profile-statistic .result-statistic {
+    font-size: 36px;
+    color: #DF3E43;
+}
+
+.profile-bio {
+    text-align: left;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profile-bio p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.profile-bio span {
+    font-weight: 700;
+    color: #DF3E43;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.profile-details {
+    height: auto;
+    width: 70%;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    box-shadow: 2px 3px 3px 2px #DDD;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-details h2 {
+    color: #BEBEBE;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-personal-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+/* .profile-contact-info */
+
+.profile-details .profile-detail-red {
+    color: #DF3E43;
+    margin-bottom: 10px;
+}
+
+.profile-details .profile-detail-black {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-links {
+    color: #489FB3!important;
+    padding-top: 4px;
+}
+
+.link-change-pw {
+    margin-top: 30px!important;
+}
+
+.profile-links:hover {
+    color: #72ABB8!important;
+}
+
+.profile-contact-phone {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-contact-email, .profile-contact-address {
+    margin-top: 60px;
+}
+
+.profile-contact-info .profile-detail-red {
+    margin-bottom: 30px;
+}
+
+.phone-wrapper {
+    display: grid;
+    grid-template-columns: 120px 200px 50px 50px;
+    height: 50px;
+}
+
+.email-wrapper {
+    display: grid;
+    grid-template-columns: 120px 360px 50px 50px;
+    height: 50px;
+}
+
+.address-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 120px 320px 200px 50px 50px;
+    grid-template-areas:
+    "des st city edit trash"
+    "des prov postal . .";
+    margin-bottom: 20px;
+}
+
+.detail-address-desc {
+    grid-area: des;
+}
+
+.detail-address-postal {
+    grid-area: postal;
+}
+
+.detail-address-prov {
+    grid-area: prov;
+}
+
+.detail-address-city {
+    grid-area: city;
+}
+
+.detail-address-st {
+    grid-area: st;
+}
+
+.address-edit-btn {
+    grid-area: edit;
+}
+
+.address-trash-btn {
+    grid-area: trash;
+}
+
+.detail-phone-desc, .detail-email-desc, .detail-address-desc {
+    font-weight: 600!important;
+    color: #BEBEBE!important;
+}
+
+.profile-contact-info svg {
+    fill: #BEBEBE;
+    justify-self: end;
+}
+
+.profile-contact-info svg:hover {
+    fill: #DF3E43;
+}
+
+.profile-add-btn {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.profile-add-btn svg {
+    fill: #9FC86A;
+}
+
+.profile-add-btn svg:hover {
+    fill: #9FC86A;
+}
+
+.profile-add-btn p {
+    color: #9FC86A;
+    margin-left: 10px;
+}
+
+.profile-bio-full .modal-dialog {
+    margin-left: 30%!important;
+}
+
+.profile-bio-full .modal-content {
+    margin-top: 30px;
+    height: auto;
+    min-height: 94vh;
+    width: 60vw!important;
+    padding: 80px;
+    position: relative;
+}
+
+.profile-bio-full .modal-content button {
+    position: absolute;
+    bottom: 30px;
+    width: 80px;
+    right: 40px;
+
+    border-radius: 20px;
+    background-color: #DF3E43;
+    border: 0;
+}
+
+.profile-bio-full .modal-content button:hover {
+    background-color: #df8084;
+}
+
+.profile-info-modal .modal-dialog {
+    margin-top: 200px;
+}
+
+.profile-info-modal .modal-content {
+    height: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 20px 1fr auto 48px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-info-modal .modal-select,
+.profile-info-modal .modal-input,
+.profile-info-modal .modal-title {
+    grid-column: 1/3;
+    font-weight: 600;
+    color: #BEBEBE;
+}
+
+.profile-info-modal .modal-title {
+    justify-self: center;
+    color: #DF3E43;
+}
+
+.profile-info-modal .input-address {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.profile-info-modal select, .profile-info-modal input {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    border: 1px solid #BEBEBE;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.profile-info-modal p {
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.profile-info-modal button {
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+}
+
+.profile-info-modal .primary-red {
+    background-color: #DF3E43;
+}
+
+.profile-info-modal .primary-red:hover {
+    background-color: #dd787c;
+}
+
+.profile-info-modal .secondary-blue {
+    background-color: #489FB3;
+}
+
+.profile-info-modal .secondary-blue:hover {
+    background-color: #72a5b1;
+}
+
+@media screen and (max-width: 1530px) {
+
+    .address-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 120px 320px 50px 50px;
+        grid-template-areas:
+        "des st edit trash"
+        "des city . ."
+        "des prov . ."
+        "des postal . .";
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .profile-statistic {
+        width: 400px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .profile-details {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+
+    .profile-body {
+        margin-left: calc(100vw - 90%);
+    }
+
+    .phone-wrapper, .email-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 36px 36px;
+        grid-template-rows: 1fr 1fr;
+        height: 80px;
+        grid-template-areas:
+        "des edit trash"
+        "cont edit trash";
+        margin-top: 30px;
+    }
+
+    .detail-phone-desc, .detail-email-desc {
+        grid-area: des;
+    }
+
+    .detail-phone-numb, .detail-email-address {
+        grid-area: cont;
+    }
+
+    .profile-edit-btn {
+        grid-area: edit;
+    }
+
+    .profile-trash-btn {
+        grid-area: trash;
+    }
+
+    .address-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 36px 36px;
+        grid-template-areas:
+        "des edit trash"
+        "st st st"
+        "city . ."
+        "prov . ."
+        "postal . .";
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .profile-body {
+        margin-left: 70px;
+        margin-right: 20px;
+    }
+
+    .profile-resume {
+        width: 100%;
+    }
+
+    .profile-details {
+        width: 100%;
+    }
+
+    .profile-statistic {
+        width: 100%;
+    }
+
+    .profile-personal-info, .profile-contact-info {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 30px;
+    }
+
+    .profile-info-modal .input-address {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .profile-info-modal .modal-dialog {
+        margin-top: 80px;
+    }
+
+    .update-address-modal .modal-dialog, .add-address-modal .modal-dialog {
+        margin-top: 10px;
+    }
+
+}

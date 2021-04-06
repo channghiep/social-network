@@ -1,0 +1,864 @@
+/* .footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    background-color: #1D1E18;
+    padding-top: 30px;
+}
+
+.footerGrid {
+    padding-top: 30px;
+    color: #FFF;
+    height: 160px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.footer .footerLogo {
+    margin-left: 100px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footerLink {
+    color: white;
+    text-decoration: none!important;
+
+    margin-top: 10px;
+}
+
+.footer .footerLink:first-of-type {
+    margin-top: 20px;
+}
+
+.footer .footerLink:hover {
+    color: #DE3F42;
+}
+
+.downloadApp {
+    margin-left: 100px;
+}
+
+.downloadApp > p {
+    margin-bottom: 20px;
+}
+
+.aboutUs a, .contactUs a, .FAQs a {
+    display: block;
+}
+
+.downloadApp button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #6DB3C5;
+    border: 0 solid #6DB3C5;
+    color: #FFF;
+
+    width: 260px;
+    height: 48px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo text1"
+    "logo text2";
+}
+
+.downloadApp button:focus {
+    background-color: #489FB5;
+    outline: none;
+}
+
+.downloadApp button img {
+    grid-area: logo;
+    justify-self: end;
+    align-self: center;
+
+    padding-right: 6px;
+
+    width: 25px;
+    height: auto;
+}
+
+.downloadApp button:first-of-type img {
+    padding-bottom: 4px;
+}
+
+.downloadApp button p {
+
+
+    padding-left: 18px;
+}
+
+.downloadApp button p:first-of-type {
+
+    font-weight: 400;
+
+}
+
+.downloadApp button p:last-of-type {
+    align-self: start;
+    font-weight: 300;
+}
+
+
+
+.newsletter p {
+    font-weight: 700;
+}
+
+.newsletter form {
+   margin-top: 20px;
+
+   display: flex;
+   flex-direction: row;
+
+}
+
+.newsletter input {
+    width: 200px;
+    height: 30px;
+    border-radius: 30px 0 0 30px;
+    border: 0 solid #FFF;
+    padding: 0;
+    padding-left: 20px;
+
+    color: #BEBEBE;
+}
+
+.newsletter input:focus {
+    outline: none;
+}
+
+.newsletter button {
+    font-weight: 700;
+    background-color: #DE3F42;
+    color: #FFF;
+
+    width: 100px;
+    height: 30px;
+    border-radius: 0 30px 30px 0;
+    border: 0 solid #DE3F42;
+    margin-left: 0;
+}
+
+.newsletter button:focus {
+    outline: none;
+}
+
+.footerEnd {
+   
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid #FFF;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerEnd p {
+    font-weight: 1;
+    margin-bottom: 0;
+}
+
+.footerEnd img {
+    padding-left: 10px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1120px) and (min-width: 900px) {
+
+    .footerGrid {
+        height: 240px;
+        width: 90vw;
+
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 200px 1fr;
+    }
+
+    .newsletter {
+        margin-left: 100px;
+
+        align-self: end;
+    }
+
+    .newsletter input {
+        width: 180px;
+    }
+
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+
+    .footer .footerLogo {
+        margin-left: 80px;
+    }
+
+    .footerGrid {
+        height: 320px;
+
+        grid-template-columns: 1.8fr 1fr 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas:
+        "about contact faq"
+        "download newsletter newsletter";
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 80px;
+    }
+
+    .contactUs {
+        grid-area: contact;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 80px;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 0;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .footerEnd {
+        margin: 100px 80px 0 80px;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 553px) {
+
+    .footer .footerLogo {
+        margin-left: 60px;
+    }
+
+    .footerGrid {
+        height: 480px;
+        width: 90vw;
+
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 3fr 3fr 1fr;
+        grid-template-areas:
+        "about contact faq"
+        "download download download"
+        "newsletter newsletter newsletter" ;
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 60px;
+    }
+
+    .contactUs {
+        grid-area: contact;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 60px;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 60px;
+        align-self: start;
+    }
+
+    .footerEnd {
+        margin: 30px 60px 0 60px;
+    }
+
+}
+
+@media screen and (max-width: 552px) and (min-width: 430px) {
+
+    .footer .footerLogo {
+        margin-left: 30px;
+    }
+
+    .footerGrid {
+        height: 600px;
+        width: 90vw;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr 3fr 1fr;
+        grid-template-areas:
+        "about about"
+        "contact faq"
+        "download download"
+        "newsletter newsletter" ;
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 30px ;
+    }
+
+    .contactUs {
+        grid-area: contact;
+        margin-left: 30px;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .footerEnd {
+        margin: 30px 30px 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 429px) {
+
+    .footer .footerLogo {
+        margin-left: 30px;
+    }
+
+    .footerGrid {
+        height: 600px;
+        width: 90vw;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr 3fr 1fr;
+        grid-template-areas:
+        "about about"
+        "contact faq"
+        "download download"
+        "newsletter newsletter" ;
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 30px ;
+    }
+
+    .contactUs {
+        grid-area: contact;
+        margin-left: 30px;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .newsletter input {
+        width: 160px;
+    }
+
+    .footerEnd {
+        margin: 30px 30px 0 30px;
+    }
+
+    .socialmedia {
+        margin-top: 10px;
+    }
+
+    .socialmedia a:first-of-type img {
+        padding-left: 0;
+    }
+
+
+} */
+
+
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    background-color: #1D1E18;
+    padding-top: 30px;
+}
+
+.footerGrid {
+    padding-top: 30px;
+    color: #FFF;
+    height: 160px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.footer .footerLogo {
+    margin-left: 100px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footerLink {
+    color: #BEBEBE;
+    text-decoration: none!important;
+
+    margin-top: 10px;
+}
+
+.footer .footerLink:first-of-type {
+    margin-top: 20px;
+}
+
+/* .footer .footerLink:hover {
+    color: #DE3F42;
+} */
+
+.downloadApp {
+    margin-left: 100px;
+}
+
+.downloadApp > p {
+    margin-bottom: 20px;
+}
+
+.aboutUs a, .contactUs a, .FAQs a {
+    display: block;
+}
+
+.downloadApp div {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #BEBEBE;
+    border: 0 solid #BEBEBE;
+    color: #FFF;
+
+    width: 260px;
+    height: 48px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "logo text1"
+    "logo text1";
+}
+
+/* .downloadAp div:focus {
+    background-color: #489FB5;
+    outline: none;
+} */
+
+.downloadApp div img {
+    grid-area: logo;
+    justify-self: end;
+    align-self: center;
+
+    padding-right: 4px;
+
+    width: 25px;
+    height: auto;
+}
+
+.downloadApp div:first-of-type img {
+    padding-bottom: 4px;
+}
+
+.downloadApp div p:last-of-type {
+    align-self: center;
+    font-weight: 700;
+    padding-left: 18px;
+}
+
+/* footer > div > p {
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.aboutUS, .contactUS, .FAQs {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+footer > div > a {
+    color: #FFF;
+    text-decoration: none;
+    
+    margin-bottom: 10px;
+}
+
+footer > div > a:hover {
+    color: #DE3F42;
+} */
+
+.newsletter p {
+    font-weight: 700;
+}
+
+.newsletter form {
+   margin-top: 20px;
+
+   display: flex;
+   flex-direction: row;
+
+}
+
+.newsletter input {
+    width: 200px;
+    height: 30px;
+    border-radius: 30px 0 0 30px;
+    border: 0 solid #FFF;
+    padding: 0;
+    padding-left: 20px;
+
+    color: #BEBEBE;
+}
+
+.newsletter input:focus {
+    outline: none;
+}
+
+.newsletter button {
+    font-weight: 700;
+    background-color: #BEBEBE;
+    color: #FFF;
+
+    width: 100px;
+    height: 30px;
+    border-radius: 0 30px 30px 0;
+    border: 0 solid #DE3F42;
+    margin-left: 0;
+}
+
+.newsletter button:focus {
+    outline: none;
+}
+
+.footerEnd {
+   
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid #FFF;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerEnd p {
+    font-weight: 1;
+    margin-bottom: 0;
+}
+
+.footerEnd img {
+    padding-left: 10px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1120px) {
+
+    .footerGrid {
+        height: 240px;
+        width: 90vw;
+
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 200px 1fr;
+    }
+
+    .newsletter {
+        margin-left: 100px;
+
+        align-self: end;
+    }
+
+    .newsletter input {
+        width: 180px;
+    }
+
+}
+
+@media screen and (max-width: 899px) {
+
+    .footer .footerLogo {
+        margin-left: 80px;
+    }
+
+    .footerGrid {
+        height: 320px;
+
+        grid-template-columns: 1.8fr 1fr 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas:
+        "about contact faq"
+        "download newsletter newsletter";
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 80px;
+    }
+
+    .contactUs {
+        grid-area: contact;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 80px;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 0;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .footerEnd {
+        margin: 100px 80px 0 80px;
+    }
+
+}
+
+@media screen and (max-width: 843px) {
+
+    .newsletter {
+        justify-self: start;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer .footerLogo {
+        margin-left: 60px;
+    }
+
+    .footerGrid {
+        height: 480px;
+        width: 90vw;
+
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 3fr 3fr 1fr;
+        grid-template-areas:
+        "about contact faq"
+        "download download download"
+        "newsletter newsletter newsletter" ;
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 60px;
+    }
+
+    .contactUs {
+        grid-area: contact;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 60px;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 60px;
+        align-self: start;
+    }
+
+    .footerEnd {
+        margin: 30px 60px 0 60px;
+    }
+
+}
+
+@media screen and (max-width: 552px) {
+
+    .footer .footerLogo {
+        margin-left: 30px;
+    }
+
+    .footerGrid {
+        height: 600px;
+        width: 90vw;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr 3fr 1fr;
+        grid-template-areas:
+        "about about"
+        "contact faq"
+        "download download"
+        "newsletter newsletter" ;
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 30px ;
+    }
+
+    .contactUs {
+        grid-area: contact;
+        margin-left: 30px;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .footerEnd {
+        margin: 30px 30px 0 30px;
+    }
+
+}
+
+@media screen and (max-width: 429px) {
+
+    .footer .footerLogo {
+        margin-left: 30px;
+    }
+
+    .footerGrid {
+        height: 600px;
+        width: 90vw;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr 3fr 1fr;
+        grid-template-areas:
+        "about about"
+        "contact faq"
+        "download download"
+        "newsletter newsletter" ;
+    }
+
+    .aboutUs {
+        grid-area: about;
+        margin-left: 30px ;
+    }
+
+    .contactUs {
+        grid-area: contact;
+        margin-left: 30px;
+    }
+
+    .FAQs {
+        grid-area: faq;
+    }
+
+    .downloadApp {
+        grid-area: download;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+        margin-left: 30px;
+        align-self: end;
+    }
+
+    .newsletter input {
+        width: 160px;
+    }
+
+    .footerEnd {
+        margin: 30px 30px 0 30px;
+    }
+
+    .socialmedia {
+        margin-top: 10px;
+    }
+
+    .socialmedia a:first-of-type img {
+        padding-left: 0;
+    }
+
+
+}
+
+/* .footer .subheading {
+    color: #FFF;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 1120px) {
+    .footer .subheading {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 843px) {
+    .footer .subheading {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .footer .subheading {
+        margin-left: 40px;
+    }
+} */

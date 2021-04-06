@@ -1,0 +1,278 @@
+.banner-aboutus {
+    max-width: 100%;
+}
+
+.carousel-aboutus {
+    position: relative;
+}
+
+.carousel-aboutus .slick-arrow {
+    display: none !important;
+}
+
+.carousel-aboutus .slick-dots {
+    position: absolute;
+    bottom: 30px;
+}
+
+.carousel-aboutus h1 {
+    position: absolute;
+    bottom: 24%;
+    padding-left: 100px;
+
+    font-family: "Saira", sans-serif;
+    font-size: 48pt;
+    color: #FFF;
+}
+
+.carousel-aboutus h1 span {
+    color: #DE3F42;
+}
+
+.carousel-aboutus .slick-dots li button:before {
+    color: #FFF;
+}
+
+.brand-intro {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.brand-name {
+    color: #DE3F42;
+    font-weight: 700;
+}
+
+.h1-aboutus {
+    color: #DE3F42;
+
+    font-family: "Saira", sans-serif;
+    font-weight: 700;
+    font-size: 24pt;
+}
+
+.h1-aboutus:nth-of-type(2) {
+    font-family: "Saira", sans-serif;
+    font-size: 16pt;
+}
+
+.brand-calltoaction {
+    margin: auto;
+    margin-bottom: 60px;
+    width: 1000px;
+    position: relative;
+}
+
+.brand-calltoaction img {
+    width: 100%;
+}
+
+.brand-calltoaction h1 {
+    width: 400px;
+    position: absolute;
+
+    top: 100px;
+    left: 100px;
+
+    font-family: "Saira", sans-serif;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 16pt;
+    line-height: 30px;
+}
+
+.brand-calltoaction .abtus-calltoaction {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+
+    background-color: #6DB3C5;
+    color: #FFF;
+    font-weight: 700;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #6DB3C5;
+    border-radius: 20px;
+}
+
+.brand-calltoaction .abtus-calltoaction:focus {
+    background-color: #489FB5;
+}
+
+@media screen and (max-width: 1679px) and (min-width: 1241px) {
+
+    .carousel-aboutus h1 {
+        font-size: 36pt;
+    }
+
+}
+
+@media screen and (max-width: 1240px) and (min-width: 1017px) {
+
+    .carousel-aboutus .banner-abt-filler {
+        max-width: 100%;
+        height: 76px;
+    }
+
+    .carousel-aboutus h1 {
+        font-size: 24pt;
+    }
+
+    .brand-calltoaction {
+        margin: auto;
+        margin-bottom: 0;
+        width: 100%;
+        height: 303px;
+        
+        background-color: #DE3F42;
+    }
+
+    .abtus-calltoaction {
+        width: 250px !important;
+    }
+
+    .brand-calltoaction img {
+        width: auto;
+        height: 303px;
+    }
+
+}
+
+@media screen and (max-width: 1016px) and (min-width: 894px) {
+
+    .carousel-aboutus .banner-abt-filler {
+        max-width: 100%;
+        height: 76px;
+    }
+    
+    .carousel-aboutus h1 {
+        font-size: 24pt;
+    }
+
+    .brand-calltoaction {
+        margin: 0;
+        width: 100%;
+    }
+
+    .abtus-calltoaction {
+        width: 250px !important;
+    }
+
+}
+
+@media screen and (max-width: 893px) and (min-width: 553px) {
+
+    .carousel-aboutus .banner-abt-filler {
+        max-width: 100%;
+        height: 76px;
+    }
+
+    .carousel-aboutus h1 {
+        font-size: 18pt;
+        padding-left: 30px;
+
+        width: 60vw;
+    }
+
+    .carousel-aboutus .slick-dots {
+        bottom: 20px;
+    }
+
+    .brand-intro {
+        width: 80vw;
+
+        margin-top: 20px;
+    }
+
+    .brand-calltoaction {
+        margin: 0;
+        width: 100%;
+        height: 140px;
+
+        background-color: #DE3F42;
+    }
+
+    .brand-calltoaction .h1-calltoaction {
+        top: 40px;
+        left: 80px;
+
+        width: 50%;
+    }
+
+    .brand-calltoaction .abtus-calltoaction {
+        width: 24%;
+
+        top: 50px;
+        left: 70%;
+    }
+
+    .brand-calltoaction img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 552px) {
+
+    .carousel-aboutus {
+        background-color: #6DB3C5;
+    }
+
+    .carousel-aboutus .banner-abt-filler {
+        max-width: 100%;
+        height: 76px;
+    }
+
+    .carousel-aboutus h1 {
+        font-size: 16pt;
+        padding-left: 30px;
+        bottom: 10%;
+
+        width: 90vw;
+    }
+
+    .carousel-aboutus img {
+        opacity: 0;
+    }
+
+    .carousel-aboutus .slick-dots {
+        bottom: 6px;
+    }
+
+    .brand-intro {
+        width: 80vw;
+
+        margin-top: 20px;
+    }
+
+    .brand-calltoaction {
+        margin: 0;
+        width: 100%;
+        height: 220px;
+
+        background-color: #DE3F42;
+    }
+
+    .brand-calltoaction img {
+        display: none;
+    }
+
+    .brand-calltoaction .h1-calltoaction {
+        top: 40px;
+        left: 30px;
+
+        width: 80vw;
+    }
+
+    .brand-calltoaction .abtus-calltoaction {
+        width: 240px;
+
+        top: 140px;
+        left: 30px;
+    }
+
+}

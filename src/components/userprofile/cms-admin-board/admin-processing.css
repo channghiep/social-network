@@ -1,0 +1,66 @@
+.admin-processing-page {
+    padding: 45px 20px 0 320px;
+}
+
+.admin-processing-header {
+    color: #DE3F42;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.admin-processing-info {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+
+.admin-processing-cattop {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.admin-processing-date {
+    margin-bottom: 0;
+}
+
+.admin-processing-author {
+    font-weight: 600;
+}
+
+.admin-processing-decise {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.admin-processing-icon {
+    margin-right: 10px;
+}
+
+.admin-processing-icon svg {
+    fill: #BEBEBE;
+}
+
+.admin-approve:hover svg {
+    fill: #9FC86A;
+}
+
+.admin-dismiss:hover svg {
+    fill: #DF3E43;
+}
+
+@media screen and (max-width: 1040px) {
+
+    .admin-processing-page {
+        padding-left: 110px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .admin-processing-page {
+        padding-left: 80px;
+    }
+
+}

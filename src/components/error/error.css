@@ -1,0 +1,91 @@
+.error-body {
+    background-color: #DE3F42;
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-banner {
+    width: 1200px;
+    opacity: .65;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: -300px;
+}
+
+.error-title {
+    font-size: 136px;
+    font-weight: 900;
+    margin: 0;
+    z-index: 1;
+}
+
+.error-subtitle {
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.error-paragraph {
+    margin-top: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.error-paragraph span {
+    font-weight: 600;
+}
+
+.error-button-tohome {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 180px;
+    height: 40px;
+    background-color: #FFF;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.error-button-tohome p {
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 600;
+    color: #DE3F42;
+}
+
+.error-button-tohome:hover {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .error-body {
+        justify-content: flex-start;
+    }
+
+    .error-title {
+        margin-top: 160px;
+        font-size: 72px;
+        margin-bottom: 10px;
+    }
+
+    .error-paragraph {
+        width: 80%;
+    }
+
+    .error-banner {
+        margin-right: 0;
+        width: 110%;
+    }
+
+}

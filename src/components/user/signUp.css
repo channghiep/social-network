@@ -1,0 +1,182 @@
+/* 
+.item1 {grid-area: area1;
+
+}
+.item2 {grid-area: area2;
+}
+.item3 {grid-area: area3;
+}
+.item4 {grid-area: area4;
+}
+.item5 {grid-area: area5;
+}
+.signUpForm{
+    display:grid;
+    grid-template-areas: 
+    'area1 area2'
+    'area3 area3'
+    'area4 area5';
+
+} */
+
+.signUpPage {
+    /* position: fixed; */
+    width: 100%;
+    height: 100vh;
+    background-color: #489FB5;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.signUpBanner img {
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .5;
+}
+
+.signUpBox {
+    flex-grow: 1;
+    z-index: 1;
+    margin-top: 30px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.signUp-maintext {
+    font-family: 'Saira', sans-serif;
+}
+
+.signUpBox p {
+    color: #FFF;
+    font-size: 18pt;
+    font-weight: 700;
+
+    margin: 0;
+    margin-top: 2px;
+}
+
+.signUpForm {
+    width: 800px;
+    margin-top: 30px;
+    
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.signup-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.signup-input {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.signup-row2 .signup-input {
+    width: 260px;
+    min-width: 240px;
+    margin-bottom: 20px;
+}
+
+.signup-row1 .signup-input,
+.signup-row3 .signup-input,
+.signup-row4 .signup-input {
+    width: 395px;
+    min-width: 240px;
+    margin-bottom: 20px;
+}
+
+.signUpForm .signup-input label {
+    font-weight: 700;
+    color: #FFF;
+}
+
+.signUpForm .signup-input input {
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgba(255,255,255,.5)!important;
+    background-color: transparent;
+    border-radius: 4px;
+
+    margin-bottom: 24px;
+}
+
+.signUpForm .signup-input input:focus {
+    outline: none;
+    border: 1px solid #FFF!important;
+    background-color: #FFF;
+    color: #1D1E18;
+
+}
+
+.signup-errors li {
+    font-weight: 700;
+    color: #FFF;
+    list-style: none;
+}
+
+.signUpPage .signInButton {
+    background-color: #DF3E43;
+}
+
+.signUpPage .signInButton p {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.signUpPage .signInBox-subtext {
+    font-size: 16px;
+    color: #1D1E18;
+}
+
+@media screen and (max-width: 850px) {
+
+    .signUpPage {
+        height:auto;
+        /* min-height: 500px; */
+    }
+
+    .signUpBanner img {
+        display: none;
+    }
+
+    .signup-row {
+        flex-flow: column wrap;
+    }
+
+    .signUpBox {
+        margin-top: 100px;
+    }
+
+    .signUpForm {
+        width: 90vw;
+    }
+
+    .signup-row .signup-input {
+        width: 100%;
+    }
+
+    .signUpPage .signInBox-thirdparty {
+        margin-bottom: 30px;
+    }
+
+    /* .signInBox {
+        margin-top: 100px;
+    } */
+
+}

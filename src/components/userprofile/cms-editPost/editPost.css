@@ -1,0 +1,36 @@
+.existed-image {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.existed-image img {
+    height: 100%;
+    width: auto;
+}
+
+.existed-image div {
+    color: #DE3F42;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.change-image .change-image-cancel {
+    text-align: right;
+    font-weight: 900;
+    color: #DE3F42;
+}
+
+@media screen and (max-width: 450px) {
+
+    .existed-image {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .existed-image div {
+        margin-left: 0;
+    }
+
+}

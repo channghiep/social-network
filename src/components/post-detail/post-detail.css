@@ -1,0 +1,282 @@
+button.MuiButtonBase-root {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #FFF;
+    background-color: white;
+}
+
+.post-detail .header-img {
+    width: 100%;
+}
+
+.post-detail h1 {
+    margin: auto;
+    margin-top: 10px;
+    max-width: 900px;
+
+    font-family: 'Saira', sans-serif;
+    font-weight: 700;
+}
+
+.post-info {
+    display: flex;
+    flex-flow: row wrap;
+
+    margin: auto;
+    margin-top: 20px;
+    max-width: 900px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-info p {
+    margin: 0;
+}
+
+.post-info p:first-of-type {
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.post-reactions {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 10px;
+    max-width: 900px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #BEBEBE;
+}
+
+.post-reactions .div-reactions {
+    margin-right: 30px;
+    width: 60px;
+}
+
+.post-reactions .div-follows {
+    color: #9FC86A;
+}
+
+.post-reactions .div-likes {
+    color: #6CB3C5;
+}
+
+.post-reactions .div-dislikes {
+    color: #DF3E43;
+}
+
+.post-reactions img {
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+.post-cont {
+    margin: auto;
+    margin-top: 60px;
+    max-width: 100vw;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.articleContent {
+    margin: auto;
+    max-width: 900px;
+}
+
+.authorInfo {
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    width: 100%;
+    
+    background-color: #F9FBF2;
+}
+
+.authorGrid {
+    margin: auto;
+    max-width: 900px;
+
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 70px 30px auto;
+    grid-template-areas:
+    "img name"
+    ". reaction"
+    "p p" ;
+}
+
+.authorInfo .author-img {
+    width: 50px;
+    align-self: end;
+}
+
+.authorInfo .author-reactions {
+    grid-area: reaction;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.author-reactions .div-reactions {
+    margin-right: 30px;
+    width: 60px;
+    font-weight: 600;
+}
+
+.author-reactions .div-unclick {
+    color: #BEBEBE;
+}
+
+.author-reactions .div-follows {
+    color: #9FC86A;
+}
+
+.author-reactions .div-likes {
+    color: #6CB3C5;
+}
+
+.author-reactions .div-dislikes {
+    color: #DF3E43;
+}
+
+.author-reactions .div-reactions img {
+    margin-right: 10px;
+}
+
+.authorInfo p {
+    margin: 0;
+}
+
+.authorInfo .author-name {
+    width: 50vw;
+    padding-left: 20px;
+    font-weight: 700;
+    color: #BEBEBE;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.authorInfo .author-name p {
+    color: #DE3F42;
+}
+
+.authorGrid>p {
+    grid-area: p;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 900px;
+}
+
+.comment-section {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 900px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.comment-section p:first-of-type {
+    font-weight: 700;
+    
+    margin-bottom: 20px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+    padding: 10px;
+}
+
+.comment-section button {
+    float: right;
+    margin-top: 16px;
+    background-color: #6DB3C5;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0 solid #6DB3C5;
+
+    color: #FFF;
+    font-weight: 700;
+}
+
+.comment-section button:focus {
+    background-color: #489FB5;
+}
+
+.comment-list{
+    margin-top: 100px;
+}
+
+.comment {
+    padding: 20px;
+    margin-bottom: 10px;
+
+    background-color: #F9FBF2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 20px auto 30px;
+    grid-template-areas:
+    "user time"
+    "cont cont"
+    "react react" ;
+}
+.inactive-dImg{
+    display:none!important;
+}
+.comment-time {
+    padding-left: 20px;
+}
+
+.comment-cont {
+    margin: 10px 0 10px 0;
+    grid-area: cont;
+}
+
+.comment-reaction {
+    grid-area: react;
+    justify-self: end;
+
+    padding-right: 20px;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.comment-reaction img {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+iframe{
+    margin: auto;
+    height: 13000px;
+    width: 100%
+}
+@media screen and (max-width: 1016px) {
+
+    .post-detail h1, .post-info, .post-reactions, .articleContent, .authorGrid, .comment-section {
+        max-width: 90vw;
+    }
+
+    .post-detail h1 {
+        margin-top: 20px;
+    }
+
+    button.MuiButtonBase-root {
+        top: 10px;
+        right: 16px;
+    }
+
+}

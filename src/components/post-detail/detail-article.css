@@ -1,0 +1,11 @@
+/* #article-detail-style{
+    width: 100vw;
+    height: auto;
+  
+} */
+
+.article-detail-style img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}

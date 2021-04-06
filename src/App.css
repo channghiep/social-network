@@ -1,0 +1,364 @@
+.App {
+  text-align: left;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+.profile-dropdown {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 65px;
+
+  display: grid;
+  grid-template-columns: 40px 25px;
+  align-items: center;
+  justify-items: end;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.responsive2 {
+  width: 80%;
+  height: auto;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+@media only screen and (max-width: 1280px){
+  .responsive2 {
+    width: 100%;
+    height: auto;
+  }
+   
+}
+
+/* .reaction-icon-size{
+  height: 9vw;
+  width: 2.9vw;
+} */
+/* .reaction-num{
+  margin-top: 50%;
+} */
+
+button:focus{
+  outline: 0!important;
+}
+.menu-bur a, .menu-bur a:hover{
+  text-decoration: none!important;
+  color:#DE3F42;
+}
+/* .signBlock{
+  width: 150px;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  top: 30px;
+  left: 85%;
+  
+} */
+.signBlock .sign-navbar-btn {
+  width: 240px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 14px;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+
+  justify-items: center;
+}
+
+.signBlock .language-switch {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 28px;
+  right: 270px;
+}
+
+.signBlock .profile-dropdown + .language-switch {
+  right: 150px;
+}
+
+.signBlock .language-switch a {
+  color: #282c34;
+}
+
+.signBlock .language-switch a:first-of-type {
+  font-weight: 600;
+}
+
+.sign-navbar-btn p {
+  margin: 0;
+  padding: 10px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.sign-navbar-btn:hover a {
+  text-decoration: none;
+}
+
+.signin-navbar-btn {
+  background-color: #DF3E43;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.signin-navbar-btn:hover {
+  background-color: #da7a7d;
+}
+
+.signup-navbar-btn {
+  background-color: #489FB3;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.signup-navbar-btn:hover {
+  background-color: #70a2ad;
+}
+
+.logout-navbar-btn {
+  position: absolute;
+  right: 20px;
+  top: 26px;
+}
+
+.logout-navbar-btn:hover {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logout-navbar-btn p {
+  font-weight: 600;
+  color: #DF3E43;
+}
+
+.logout-navbar-btn:hover p {
+  color: #da7a7d;
+}
+
+.inactive-sign .logout-navbar-btn {
+  display: none;
+}
+
+.inactive-sign .sign-navbar-btn {
+  display: none;
+}
+
+.inactive-sign .language-switch {
+  display: none;
+}
+
+.signBlock .profile-dropdown {
+  top: 4px;
+  box-shadow: none;
+}
+
+.signBlock .profile-dropdown img {
+  margin-top: 4px;
+}
+
+.signBlock .profile-dropdown img:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.signBlock .drop-active {
+  margin-top: 4px;
+  margin-right: 0;
+}
+
+.header-scroll .profile-dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .signBlock {
+    display:none;
+  }
+
+}
+
+.inactive-sign{
+  left: -1000px;
+  /* top: 17px; */
+  transition: all .5s ease-in-out;
+}
+
+.heading {
+  font-family: 'Saira';
+  font-weight: 700;
+}
+.heading-size-S, .size24{
+  font-size: 24px;
+  /* font-size: 2.9vw; */
+}
+.heading-size-M, .size48{
+  font-size: 48px;
+  /* font-size: 5.3vw; */
+}
+.heading-size-L, .size60{
+  font-size: 60px;
+  /* font-size: 6.7vw; */
+}
+.size20{
+  font-size: 20px;
+  /* font-size: 2.3vw; */
+}
+.subheading {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.subheading-menu{
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.subheading a{
+  text-decoration: none;
+    color: white;
+}
+.subheading-size, .size16{
+  font-size: 16px;
+  /* font-size: 1.8vw; */
+}
+.reaction-size, .size18{
+  font-size: 18px;
+  /* font-size: 2vw; */
+}
+.size14{
+  font-size:14px;
+  /* font-size:1.6vw; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.wrapper{
+  position: relative;
+}
+.wrapper .inactive{
+  width: 0px;
+  transition: all .5s ease-in-out;
+}
+.header{
+  width:100%;
+  position: fixed;
+  height: 75px;
+  z-index: 10000;
+  background-color: white;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  
+}
+.header-scroll{
+  width: 403px;
+  position: fixed;
+  height: 75px;
+  z-index: 2000;
+  background-color: white;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 0px 50px 50px 0px;
+}
+.logo{
+  position: fixed;
+     width: 36px;
+    height: 30px;
+    left: 100px;
+    top: 17px;
+    transition: all .5s ease-in-out;
+}
+.logo-inactive{
+  position: fixed;
+     width: 36px;
+    height: 30px;
+    left: -1000px;
+    top: 17px;
+    transition: all .5s ease-in-out;
+}
+
+.postList-outer{
+  display:grid;
+  grid-template-columns: 70% 30%;
+}
+.ads-sideL {margin-bottom: 30px;}
+
+@media only screen and (max-width: 970px){
+  .ads-sideL{
+    display: none;
+  }
+  .postList-outer{
+    display:grid;
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (max-width: 600px){
+
+  .header {
+    height: 60px;
+  }
+
+  .logo {
+    left: 70px;
+  }
+
+  .logo img {
+    height: 24px;
+  }
+
+  .header-scroll{
+    width: 80%;
+    height: 60px;
+  }
+
+}
+
+.custArrow{
+  display: block;
+    background: red;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

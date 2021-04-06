@@ -1,0 +1,72 @@
+.cms-postList-outer {
+    padding-top: 120px;
+    margin-right: 200px;
+    margin-left: 300px!important;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+}
+
+.cms-postsLists-card .list {
+    height: auto;
+}
+
+.cms-postsLists-card .post-headingL {
+    grid-template-rows: auto auto; 
+}
+
+.cms-postsLists-card .post-heading-top {
+    grid-template-rows: 30px auto 40px;
+}
+
+.cms-postsLists-card .post-heading-top .post-delete-icon {
+    align-self: end;
+    justify-self: end;
+    grid-area: reaction!important;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.cms-postsLists-card .post-heading-top .post-delete-icon svg {
+    fill: #BEBEBE;
+}
+
+.cms-postsLists-card .post-heading-top .post-delete-icon:hover svg {
+    fill: #111;
+}
+
+.cms-postsLists-card h1 {
+    color: #111;
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .cms-postList-outer {
+        margin-left: 100px!important;
+    }
+
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .cms-postList-outer {
+        width: 80vw;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .cms-postList-outer {
+        margin-left: 70px!important;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .cms-postList-outer {
+        margin-left: 70px!important;
+        width: 75%;
+    }
+
+}

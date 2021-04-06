@@ -1,0 +1,416 @@
+/* .edit-profile-body {
+    margin-left: 330px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.edit-profile-body p {
+    margin: 0;
+    color: #1D1E18;
+}
+
+h1, p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: #DF3E43;
+    margin-bottom: 30px;
+}
+
+.return-to-profile {
+    margin-bottom: 30px;
+    fill: #1D1E18;
+}
+
+.return-to-profile:hover {
+    fill: #DF3E43;
+}
+
+.edit-title {
+    grid-area: title;
+    color: #DF3E43!important;
+}
+
+.edit-section {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+}
+
+.edit-section label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.edit-section input {
+    height: 40px;
+    border: 1px solid rgba(190, 190, 190, .5);
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.account-info-grid {
+    display: grid;
+    grid-template-columns: 15% 40% 40%;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-areas: 
+     "title fname lname"
+     ". user dplay"
+     ". bday job"
+     ". bio bio" ;
+
+     width: 90%;
+}
+
+.fname {
+    grid-area: fname;
+}
+
+.lname {
+    grid-area: lname;
+}
+
+.username {
+    grid-area: user;
+}
+
+.dpname {
+    grid-area: dplay;
+}
+
+.occupation {
+    grid-area: job;
+}
+
+.bday {
+    grid-area: bday;
+}
+
+.bio {
+    grid-area: bio;
+    width: 95%;
+}
+
+.bio input {
+    height: 100px;
+}
+
+.contact-info-wrapper {
+    display: grid;
+    grid-template-columns: 13.5% 72%;
+    grid-template-areas: 
+     "title div";
+}
+
+.contact-info-grid {
+    height: 120px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 20px;
+    grid-template-areas:
+     "type cont"
+     ". remove";
+
+    margin-bottom: 40px;
+}
+
+.remove-link {
+    color: #DF3E43!important;
+    grid-area: remove;
+    justify-self: end;
+    padding-right: 60px;
+}
+
+.edit-section select {
+    height: 42px;
+    border: 1px solid rgba(190, 190, 190, .5);
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.add-button {
+    height: 40px;
+    width: 240px;
+    border-radius: 20px;
+    background-color: #9FC86A;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    background-color: #B0CC8B;
+}
+
+.add-button svg {
+    fill: #FFF;
+    margin-right: 10px;
+    margin-left: -12px;
+}
+
+.add-button p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.edit-profile-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    padding-top: 30px;
+    width: 82%;
+}
+
+.edit-profile-buttons .button {
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.button p {
+    font-weight: 500;
+    color: #FFF;
+}
+
+.cancel-profile {
+    background-color: #DF3E43;
+    width: 190px;
+}
+
+.cancel-profile:hover {
+    background-color: #E0565A;
+}
+
+.save-profile {
+    margin-left: 20px;
+    background-color: #489FB3;
+    width: 120px;
+    
+}
+
+.save-profile:hover {
+    background-color: #72ABB8;
+} */
+
+.edit-profile-body {
+    margin-left: 330px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.edit-profile-body p {
+    margin: 0;
+    color: #1D1E18;
+}
+
+.edit-profile-body h1, p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.edit-profile-body h1 {
+    color: #DF3E43;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.return-to-profile {
+    margin-bottom: 30px;
+    fill: #1D1E18;
+}
+
+.return-to-profile:hover {
+    fill: #DF3E43;
+}
+
+.edit-title {
+    grid-area: title;
+    color: #DF3E43!important;
+}
+
+.edit-section {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+}
+
+.edit-section label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.edit-section input {
+    height: 40px;
+    border: 1px solid rgba(190, 190, 190, .5);
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.account-info-grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: 
+     "name name"
+     "user dplay"
+     "bday job"
+     "tease tease"
+     "bio bio" ;
+
+     width: 90%;
+}
+
+.edit-wrap-name {
+    grid-area: name;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.edit-wrap-name .edit-section {
+    width: 31.2%;
+}
+
+.username {
+    grid-area: user;
+}
+
+.dpname {
+    grid-area: dplay;
+}
+
+.occupation {
+    grid-area: job;
+}
+
+.bday {
+    grid-area: bday;
+}
+
+.bio-tease {
+    grid-area: tease;
+    width: 100%;
+}
+
+.bio {
+    grid-area: bio;
+    width: 100%;
+}
+
+.bio input {
+    height: 100px;
+}
+
+.edit-profile-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    width: 65%;
+}
+
+.edit-profile-buttons .button {
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.button p {
+    font-weight: 500;
+    color: #FFF;
+}
+
+.cancel-profile {
+    background-color: #DF3E43;
+    width: 190px;
+}
+
+.cancel-profile:hover {
+    background-color: #E0565A;
+}
+
+.save-profile {
+    margin-left: 20px;
+    background-color: #489FB3;
+    width: 120px;
+    
+}
+
+.save-profile:hover {
+    background-color: #72ABB8;
+}
+
+@media screen and (max-width: 1320px) {
+
+    .account-info-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .edit-profile-buttons {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+
+    .edit-profile-body {
+        margin-left: 120px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .account-info-grid {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .edit-section {
+        width: 100%;
+    }
+
+    .edit-wrap-name {
+        flex-flow: column wrap;
+    }
+
+    .edit-wrap-name .edit-section {
+        width: 100%;
+    }
+
+    .edit-profile-buttons .button {
+        width: 100%;
+    }
+
+    .save-profile {
+        margin-top: 10px;
+        margin-left: 0;
+        background-color: #489FB3;
+    }
+
+}

@@ -1,0 +1,299 @@
+.banner-contactus {
+    width: 100%;
+    position: relative;
+}
+
+.intro-contactus {
+    font-family: "Saira", sans-serif;
+    color: #FFF;
+
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    width: 600px;
+}
+
+.intro-contactus h1 {
+    font-size: 48pt;
+}
+
+.intro-contactus p {
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+}
+
+.h1-contactus {
+    margin: auto;
+    margin-top: 60px;
+    max-width: 800px;
+
+    font-family: "Saira", sans-serif;
+    color: #1D1E18;
+    font-weight: 700;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.h1-contactus span {
+    color: #DE3F42;
+}
+
+.form-contactus {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 800px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    grid-template-areas: 
+    "first last"
+    "email email"
+    "subject subject"
+    "message message"
+    ". button";
+}
+
+.first-contactus {
+    grid-area: first;
+
+    padding-right: 10px;
+}
+
+.last-contactus {
+    grid-area: last;
+    padding-left: 10px;
+}
+
+.email-contactus {
+    grid-area: email;
+}
+
+.subject-contactus {
+    grid-area: subject;
+}
+
+.message-contactus {
+    grid-area: message;
+}
+
+.form-contactus button {
+    grid-area: button;
+}
+
+.form-contactus div {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.form-contactus label {
+    color: #DE3F42;
+    font-weight: 700;
+
+    margin-top: 30px;
+}
+
+.form-contactus input {
+    height: 40px;
+    margin-top: 4px;
+    padding-left: 10px;
+    border: 1px solid #BEBEBE;
+    border-radius: 4px;
+}
+
+.form-contactus .message-contactus input {
+    height: 100px;
+}
+
+.form-contactus button {
+    justify-self: end;
+
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #6DB3C5;
+    background-color: #6DB3C5;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.form-contactus button:focus {
+    background-color: #489FB5;
+}
+
+@media screen and (max-width: 1420px) and (min-width: 1200px) {
+
+    .filler-banner-contactus {
+        width: 100%;
+        height: 76px;
+
+        background-color: #DE3F42;
+    }
+    
+    .intro-contactus h1 {
+        font-size: 36pt;
+    }
+
+    .intro-contactus p {
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) and (min-width: 900px) {
+
+    .filler-banner-contactus {
+        width: 100%;
+        height: 76px;
+
+        background-color: #DE3F42;
+    }
+
+    .banner-contactus {
+        position: static;
+    }
+
+    .intro-contactus {
+        position: static;
+
+        margin: auto;
+        width: 800px;
+    }
+
+    .intro-contactus h1 {
+        margin-top: -180px;
+        margin-bottom: 180px;
+        font-size: 36pt;
+    }
+
+    .intro-contactus p {
+        color: #1D1E18;
+    }
+
+}
+
+@media screen and (max-width: 899px) and (min-width: 553px) {
+
+    .filler-banner-contactus {
+        width: 100%;
+        height: 76px;
+
+        background-color: #DE3F42;
+    }
+
+    .banner-contactus {
+        position: static;
+    }
+
+    .intro-contactus {
+        position: static;
+
+        margin: auto;
+        width: 80vw;
+    }
+
+    .intro-contactus h1 {
+        margin-top: -28%;
+        margin-bottom: 24%;
+        font-size: 36pt;
+    }
+
+    .intro-contactus p {
+        color: #1D1E18;
+    }
+
+    .h1-contactus {
+        width: 80vw;
+    }
+
+    .form-contactus {
+        width: 80vw;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .first-contactus {
+        padding-right: 0;
+    }
+    
+    .last-contactus {
+        padding-left: 0;
+    }
+    
+    .form-contactus label {
+        margin-top: 20px;
+    }
+
+    .form-contactus .message-contactus input {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 552px) {
+
+    .filler-banner-contactus {
+        width: 100%;
+        height: 76px;
+
+        background-color: #DE3F42;
+    }
+
+    .banner-contactus {
+        position: static;
+    }
+
+    .intro-contactus {
+        position: static;
+
+        margin: auto;
+        width: 80vw;
+    }
+
+    .intro-contactus h1 {
+        margin-top: -28%;
+        margin-bottom: 24%;
+        font-size: 36pt;
+    }
+
+    .intro-contactus p {
+        color: #1D1E18;
+    }
+
+    .h1-contactus {
+        width: 80vw;
+    }
+
+    .form-contactus {
+        width: 80vw;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .first-contactus {
+        padding-right: 0;
+    }
+    
+    .last-contactus {
+        padding-left: 0;
+    }
+    
+    .form-contactus label {
+        margin-top: 20px;
+    }
+
+    .form-contactus .message-contactus input {
+        margin-bottom: 30px;
+    }
+
+    .form-contactus button {
+        width: 80vw;
+    }
+
+}

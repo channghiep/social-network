@@ -1,0 +1,58 @@
+.MuiSvgIcon-root {
+    color: #111;
+}
+
+.compose-new-post {
+    margin-top: 30px;
+    margin-left: 80px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #DF3E43;
+}
+
+.compose-post {
+    margin: auto;
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    width: 800px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.compose-post select, .compose-post input {
+    height: 40px;
+    width: 100%;
+
+    padding-left: 20px;
+    border: 1px solid #BEBEBE;
+    border-radius: 4px;
+}
+
+.compose-post select {
+    background-color: #F0F0F0;
+}
+
+.compose-post label {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.compose-post .article {
+    height: 280px;
+}
+
+.compose-post .submitButton {
+    margin-top: 20px;
+    align-self: flex-end;
+
+    width: 160px;
+    height: 40px;
+
+    color: #FFF;
+    font-weight: 700;
+    background-color:  #DF3E43;
+    border: 1px solid  #DF3E43;
+    border-radius: 20px;
+}

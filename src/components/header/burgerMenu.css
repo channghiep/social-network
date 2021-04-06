@@ -1,0 +1,251 @@
+
+  
+  #page-wrap {
+    text-align: center;
+  
+    /* Prevent sidebar from showing a scrollbar on page */
+    overflow: auto;
+  }
+  /* .bm-mebu-wrap a{
+    text-decoration: none;
+  } */
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+  
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+  
+  /* The rest copied directly from react-burger-menu docs */
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+     width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 21px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background:black;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #FFFFFF;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #FFFFFF;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: #FFFFFF;
+  }
+  .menu-item{
+    color: #DE3F42;
+  }
+  .submenu-item{
+    color: #1D1E18;
+  }
+  .bm-item:focus{
+    outline: 0;
+  }
+  .sign-scroll{
+    display:none;
+  }
+  .header-sign{
+    display:none;
+  }
+
+  .bm-menu {
+    padding: 0;
+  }
+
+  .side-drawer-container {
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(1, 1, 1, .15);
+  }
+
+  .side-drawer-menu .side-drawer-container {
+    display: flex!important;
+    align-items: flex-start!important;
+    flex-flow: row wrap;
+  }
+
+  .side-drawer-menu .side-drawer-latest, .side-drawer-menu .side-drawer-trending,
+  .side-drawer-menu .side-drawer-media, .side-drawer-menu .side-drawer-abt,
+  .side-drawer-menu .side-drawer-contact {
+    height: 36px;
+  }
+
+  .side-drawer-menu .side-drawer-trending {
+    margin-bottom: 10px;
+  }
+
+  .side-drawer-menu .side-drawer-grid {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .side-drawer-menu .side-drawer-cat {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  .side-drawer-cat a p.menu-item.size14 {
+    margin: 0;
+    width: 240px;
+  }
+
+  .side-drawer-menu .MuiGrid-grid-xs-12 {
+    margin: 0!important;
+  }
+
+  .side-drawer-menu .MuiGrid-grid-xs-12 a.submenu-item.size14 {
+    line-height: 20px;
+  }
+
+  .bm-menu .profile-dropdown {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    padding-left: 30px;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(1, 1, 1, .15);
+
+    left: 0;
+    top: 640px;
+    box-shadow: none;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bm-menu .profile-dropdown img:nth-of-type(2) {
+    display: none;
+  }
+
+  .bm-menu .profile-dropdown .drop-inactive, .bm-menu .profile-dropdown .drop-active {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .bm-menu .profile-dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bm-menu .profile-dropdown li {
+    height: 24px;
+  }
+
+  .bm-menu .profile-dropdown a {
+    color: #BEBEBE!important;
+  }
+
+  .bm-menu .sign-navbar-btn {
+    margin-top: 20px;
+  }
+
+  .bm-menu .signin-navbar-btn p {
+    background-color: #DE3F42;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+  }
+
+  .bm-menu .signup-navbar-btn p {
+    background-color: #489FB5;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+  }
+
+  .bm-menu .language-switch {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60px;
+    height: 20px;
+    margin-left: 30px!important;
+    margin-top: 10px;
+    color: #1D1E18;
+    font-size: 16px;
+  }
+
+  .bm-menu .profile-dropdown + .language-switch {
+    position: absolute;
+    top: 690px;
+  }
+
+  .bm-menu .language-switch a {
+    color: #1D1E18;
+  }
+
+  .bm-menu .profile-dropdown + .language-switch {
+    bottom: 2px;
+  }
+
+  .bm-menu .language-switch a:first-of-type {
+    font-weight: 600;
+  }
+
+  .bm-menu .language-switch p {
+    margin: 0;
+  }
+
+  .bm-menu .language-switch:hover {
+    color: #1D1E18;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .bm-burger-button {
+      height: 20px;
+      left: 20px;
+      top: 17px;
+    }
+
+  }
