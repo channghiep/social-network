@@ -47,8 +47,7 @@ import SignUp from './components/user/signup';
 import AddPostRoute from '../src/utils/privateRoute'
 import ProfileDropDown from '../src/components/userprofile/profile-dropdown/profile-dropdown'
 import ProfileDropdownUI from './components/userprofile/profile-dropdown/profile-dropdown-ui';
-// import DynamicNav from './utils/dynamicNav';
-// import {  } from 'react-router-dom';
+
 
 
 
