@@ -32,8 +32,6 @@ export default function ControlledCarousel(props){
     //     setOpen(false);
     //   };
     const blankArray=[{
-        // setScroll:props.setScroll
-        // key={postID}
         author:``,
         category:'',
         topic:'',
@@ -46,7 +44,6 @@ export default function ControlledCarousel(props){
         follows:'',
         flags:'',
         postID:'',
-        
         source:'',
         article:'',
         author1:'',
@@ -59,12 +56,9 @@ export default function ControlledCarousel(props){
             await Axios.get(`https://api-dev.trustnews.ca/breaking`).then(response=>{
                 // console.log(response.data)
                 if(response.data.length === 0 ){
-                    // console.log('ho')
                     setPosts(blankArray)
-                    
                 }
                 else{
-                    // console.log('hoy')
                     setPosts(response.data)
                 }
             })
@@ -85,7 +79,6 @@ export default function ControlledCarousel(props){
         cssEase: "linear",
         arrows: false
       };
-    // console.log(posts)
     return (
         <div className="carousel">
            <Slider {...settings}>
@@ -104,7 +97,6 @@ export default function ControlledCarousel(props){
                 }
                 date = `${date.getFullYear()}-${newMonth}-${newDay}`
                 return(
-                    // <Carousel.Item>
                     <CarouselItem
                     setScroll={props.setScroll}
                     key={postID}
@@ -129,7 +121,6 @@ export default function ControlledCarousel(props){
                 )
             })}
         </Slider> 
-        {/* </Carousel> */}
         </div>
       );
 }

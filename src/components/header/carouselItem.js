@@ -8,8 +8,6 @@ import ShowDetail from '../landing/showDetail'
 export default function CarouselItem(props){
     
     const [open, setOpen] = useState(false)
-
-   
     const handleOnClick = ()=>{
         props.setScroll(true)
         setOpen(true);
@@ -19,11 +17,6 @@ export default function CarouselItem(props){
         setOpen(false);
       };
 
-   
-    // const handleOnClick = ()=>{
-    //     setOpen(true);
-
-    // }
  
    if(props.articleURL == undefined){
 

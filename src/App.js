@@ -56,16 +56,8 @@ export default function App() {
   const [scroll, setScroll] = useState(false);
   const [navActive, setNavActive] = useState(true)
   const [signIn, setSignIn] = useState(false)
-  const [signUp, setSignUp] = useState(false)
-  
-  // let history = useHistory();
-//   useEffect(()=>{
-//     window.scrollTo(0, 0);
-// },[])
-const [loading, setLoading] = useState(true)
+
  useEffect(() => {
-  // window.scrollTo(0, 0)
-  
    if(getExpirUser().isAuth == true || getExpirUser().isAuth == 'true'){
      setSignIn(true)
    }else{
@@ -76,48 +68,25 @@ const [loading, setLoading] = useState(true)
    });
    
  }, []); 
-//  const handleOnClick = ()=>{
-//   setSignOpen(true);
-
-// }
-// const handleClose = () => {
-//   setSignOpen(false);
-// };
-
 
 
 const handleSignIn = () => {
   setSignIn(true);
 };
-//  const handleOnClickSignup = ()=>{
-//   // setSignUp(true);
-//   history.push('/about')
 
-// }
-const handleLogOut = () => {
-  // setSignUp(false);
-  setSignIn(false);
-  removeUserLocal()
-};
 const onClickHideNav = () =>{
   setNavActive(!navActive)
 }
 
-
 function UserIn(){
   return(
-
-      // <Link to="/"><p style={{cursor:"pointer"}} onClick={handleLogOut}>Log Out </p></Link>
-      <ProfileDropdownUI setSignIn={setSignIn}/>
-    
+      <ProfileDropdownUI setSignIn={setSignIn}/>  
   )
 }
+
 function GuestIn(){
   return(
-      // <div>
-      // <Link to="/signin"><p style={{cursor:"pointer"}} >Sign In </p></Link>
-      // <Link to="/signup"><p style={{cursor:"pointer"}} >Sign Up</p></Link>
-      // </div>
+
       <div className="sign-navbar-btn">
       <Link className="signin-navbar-btn" to="/signin"><p style={{cursor:"pointer"}} >sign in </p></Link>
       <Link className="signup-navbar-btn" to="/signup"><p style={{cursor:"pointer"}} >sign up</p></Link>
@@ -128,24 +97,6 @@ function GuestIn(){
   )
 }
 function DynamicNav(){
-  // const [Auth, setAuth] = useState(localStorage.getItem('isAuth'))
-  // const [signinStat, setSigninstat] = useState(signIn)
-  // console.log('ads',signin)
-  // const [signup, setsignup] = useState('')
-  // useEffect(()=>{
-  //     // setAuth(localStorage.getItem('isAuth'))
-
-  // if(signIn === true){
-  //     // setSigninstat(true)
-  //     console.log('ads',signIn)
-
-  // }else{
-  //     // setSigninstat(false)
-  //     console.log('ads',signIn)
-  // }
-  // },signIn)
-
- 
   if(signIn){
       return <UserIn/>
   }else{
@@ -154,10 +105,7 @@ function DynamicNav(){
 }
 function OrgiNav(){
   return(
-      <div className={`${navActive ? "" : "inactive"} ${scroll ? "header-scroll" : "header" }`} >
-   
-        
-           
+      <div className={`${navActive ? "" : "inactive"} ${scroll ? "header-scroll" : "header" }`} >   
       <div className={`signBlock ${scroll ? "inactive-sign" : "" }`}   >
         
         <DynamicNav signIn={signIn}/>
@@ -172,9 +120,6 @@ function OrgiNav(){
         </div>
         
       </div>
- 
-   
-
     
     <div>
       <BurgerMenu  onClickHideNav={onClickHideNav} scroll={scroll} burSignIn={setSignIn}/>
@@ -184,246 +129,167 @@ function OrgiNav(){
       <img src={logo} alt='logo'/>
     </div>
     </a>
-
-    
-    
-
   </div>
   )
 }
  
-//  useEffect(()=>{
-//   this.ref.burger.className = {nav};
-//  });
  console.log('nav',signIn)
  console.log(getExpirUser().isAuth)
   return (
     <Router basename="/">
       <div className="App">
-      {/* <ReCAPTCHA sitekey="6LfmYdcZAAAAAKaAy0EOn5zTRnwqB2jjjaCcIxSn" onChange={onChange} /> */}
         <div className="wrapper">
-            
-            {/* <div className={`${navActive ? "" : "inactive"} ${scroll ? "header-scroll" : "header" }`} >
-     
-             
-                <div className={`signBlock ${scroll ? "inactive-sign" : "" }`}   >
-
-                  <DynamicNav signIn={signIn}/>
-                </div>
-           
-             
-
-              
-              <div>
-                <BurgerMenu  onClickHideNav={onClickHideNav} scroll={scroll}/>
-              </div>
-              <Link to="/">
-              <div className={`${navActive ? "logo" : "logo-inactive"}`}>
-                <img src={logo} alt='logo'/>
-              </div>
-              </Link>
-              
-              
-
-            </div> */}
-                <Switch>
-                  <Route exact path='/'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/signin'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/signup'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/postslist/:categoryTypeID'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/subpostslist/:topicTypeID'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/trendinglist'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/latestlist'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/featuredlist'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/mainstream'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/about'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/contact'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/error'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/privacy-policy'>
-                      <OrgiNav/>
-                  </Route>
-                  <Route exact path='/terms-of-use'>
-                      <OrgiNav/>
-                  </Route>
-          
-                  
-                  <Route path='/profile'>
-                      <Navbar/>
-                      <ProfileDropDown setSignIn={setSignIn}/>
-                  </Route>
-                  <Route exact path='/:userName'>
-                      <OrgiNav/>
-                  </Route>
-              </Switch>
+          <Switch>
+            <Route exact path='/'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/signin'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/signup'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/postslist/:categoryTypeID'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/subpostslist/:topicTypeID'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/trendinglist'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/latestlist'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/featuredlist'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/mainstream'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/about'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/contact'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/error'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/privacy-policy'>
+                <OrgiNav/>
+            </Route>
+            <Route exact path='/terms-of-use'>
+                <OrgiNav/>
+            </Route>  
+            <Route path='/profile'>
+                <Navbar/>
+                <ProfileDropDown setSignIn={setSignIn}/>
+            </Route>
+            <Route exact path='/:userName'>
+                <OrgiNav/>
+            </Route>
+        </Switch>
             <div className="body">
-              {/* //route */}
-              {/* <div style={{position:"fixed", zIndex:1000}}>
-              <PostsList/>
-              </div> */}
               <Switch>
                 <Route exact path='/' >
                 <Landing setScroll={setScroll}/>  </Route>
                 <Route path='/signin'>
                     <User onClickSignIn={handleSignIn}/>
-                  </Route>
+                </Route>
                 <Route path='/signup'>
                   <SignUp onClickSignUp={handleSignIn}/>
-                  </Route>
-                {/* <Route path="/signIn" component={SignIn}/>
-                           <Route exact path="/userPost" component={UserPosts}/> */}
+                </Route>
                 <Route path='/postslist/:categoryTypeID'>
                   <div style={{paddingTop:"150px", maxWidth: "1200px",margin:"auto"}}>
                     <PostsList setScroll={setScroll}/>
-                  </div>
-                    
+                  </div>  
                 </Route> 
                 <Route path='/subpostslist/:topicTypeID'>
                   <div style={{paddingTop:"150px", maxWidth: "1200px",margin:"auto"}}>
                     <SubPostsList setScroll={setScroll}/>
-                  </div>
-                    
+                  </div>  
                 </Route> 
                 <Route path='/trendinglist'>
                   <div style={{paddingTop:"150px", maxWidth: "1200px",margin:"auto"}}>
                     <TrendingList setScroll={setScroll}/>
-                  </div>
-                    
+                  </div>                   
                 </Route> 
                 <Route path='/latestlist'>
                   <div style={{paddingTop:"150px", maxWidth: "1200px",margin:"auto"}}>
                     <LatestList setScroll={setScroll}/>
-                  </div>
-                    
+                  </div>                   
                 </Route> 
                 <Route path='/featuredlist'>
                   <div style={{paddingTop:"150px", maxWidth: "1200px",margin:"auto"}}>
                     <FeaturedList setScroll={setScroll}/>
-                  </div>
-                    
+                  </div>                   
                 </Route> 
                 <Route path='/mainstream'>
                   <div style={{paddingTop:"150px", maxWidth: "1200px",margin:"auto"}}>
                     <MainstreamList setScroll={setScroll}/>
-                  </div>
-                    
+                  </div>                   
                 </Route> 
                 <Route path='/about' component={About}/>
-                
-            
-
                 <Route exact path='/contact' component={Contact}/>
-                
                 <Route exact path='/privacy-policy' component={PrivatePolicy}/>
                 <Route exact path='/terms-of-use' component={TermUse}/>
                 <AddPostRoute path='/profile' component={Profile}/>
                 <Route exact path='/error' component={ErrorPage}/>
                 <Route path='/:userName'>
                 <PublicProfile setScroll={setScroll}/>
-
                   </Route>
-                <Route path='*' component={ErrorPage}/>
-                
-
-                {/* <Route path='/tnews'>
-                  <div>
-
-                  <Tnews/> 
-                  </div>
-                </Route>  */}
-                {/* <Route exact path='/tnewseditpost'>
-                  <TnewsEditPost/> 
-                </Route>  */}
-                
-                {/* <Route exact path='/post-detail/:id'>
-                  <
-
-                </Route> */}
+                <Route path='*' component={ErrorPage}/>               
               </Switch>
             </div>
-            {/* <div className="footer"> */}
             <Switch>
                   <Route exact path='/'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/signin'>
-                      {/* <Footer/> */}
                   </Route>
                   <Route exact path='/signup'>
-                      {/* <Footer/> */}
                   </Route>
                   <Route exact path='/postslist/:categoryTypeID'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/subpostslist/:topicTypeID'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/trendinglist'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/mainstream'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/latestlist'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/featuredlist'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/about'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/contact'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/privacy-policy'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route exact path='/terms-of-use'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
                   <Route path='/profile'>
-                     
                   </Route>
                   <Route exact path='/error' />
                   <Route exact path='/:userName'>
-                      <Footer/>
+                    <Footer/>
                   </Route>
-            
-               
-                <Route path='*' />
-                  
-             
+                <Route path='*'/>                           
               </Switch>
-             
-            {/* </div> */}
         </div>
-      </div>
-    
-    </Router>
-      
+      </div>    
+    </Router>      
   );
 }
