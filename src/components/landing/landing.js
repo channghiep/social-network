@@ -69,18 +69,7 @@ export default function Landing(props){
             seta(true)
         }
     },[detecta])
-    // console.log(categor)
-    // const array=[{cate:"World"}, {cate:"Politics"}, {cate:"Entertain"}, {cate:"Business"},{cate:"Science"},{cate:"Health"},{cate:"LifeStyle"},{cate:"Food"}];
-    
-    // function DynamicPo(){
-    //     if(detectp.length < 4){
-    //         return( <div  item xs={6} >
-    //             hello
-    //         </div>)
-    //     }else{
-    //         return( )
-    //     }
-    // }
+
     const [blankFeature, setBlankFeature]=useState(true)
     const [blankTrending, setBlankTrending]= useState(true)
     function BlankFunction(){
@@ -93,9 +82,7 @@ export default function Landing(props){
         <div>
             {loading ?  <Loading/> :
         <div className="landing">
-            
-            {/* <ControlledCarousel/>
-             */}
+
              
              <div className="breakingNews">
                 <BreakingCarou setScroll={props.setScroll}/>

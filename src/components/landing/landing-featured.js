@@ -16,27 +16,21 @@ function NextArrow(props){
     const { className, style, onClick } = props;
     return(
         <div id="nextA"
-            // className="custArrow"
-            // style={{ ...style, background: "#DE3F42",display: "inline-block" }}
             onClick={onClick}>
             <img src={UpArrow} alt="up-arrow"></img>
         </div>
-    
     )
 }
 function PrevArrow(props){
     const { className, style, onClick } = props;
     return(
         <div id="prevA"
-            // className="custArrow"
-            // style={{ ...style, zIndex:'1000', top:"10px", position: "absolute"}}
             onClick={onClick}>
             <img src={DownArrow} alt="down-arrow"></img>
         </div>
     
     )
 }
-
 
 export default function FeaturedSlick(props){
     const settings = {
@@ -50,25 +44,22 @@ export default function FeaturedSlick(props){
       prevArrow: <PrevArrow />
         };
 
-      const [params, setParams] = useState(props)
-      const [posts, setPosts] = useState([])
+    const [params, setParams] = useState(props)
+    const [posts, setPosts] = useState([])
 
-
-  
-      useEffect(() =>{
-          const fecthData = async () => {
-              const response = await Axios.get(`https://api-dev.trustnews.ca/featured?count=10`);
-            //   const response = await Axios.get(`https://api-dev.trustnews.ca/exArticles?categoryName="canada"&count=10`);
+    useEffect(() =>{
+        const fecthData = async () => {
+            const response = await Axios.get(`https://api-dev.trustnews.ca/featured?count=10`);
+            //const response = await Axios.get(`https://api-dev.trustnews.ca/exArticles?categoryName="canada"&count=10`);
             if(response.data.length === 0){
                 props.setBlankFeature(true)
-              }else{
+            }else{
                 props.setBlankFeature(false)
                 setPosts(response.data)
-              }  
-            // setPosts(response.data)
+            }  
           }
-          fecthData();
-      },[])
+        fecthData();
+    },[])
     return(
         <div>
             <Slider {...settings}>
@@ -108,13 +99,9 @@ export default function FeaturedSlick(props){
                     flags={flags}
                     imageLink={imageLink}
                     />
-                    
-                      
-         
                 )
             })}
             </Slider>
-
-         </div>
+        </div>
     )
 }

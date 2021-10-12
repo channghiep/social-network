@@ -120,51 +120,37 @@ export default function CarouselItem(props){
                
                />
 
-      
-        
-        
-        <div>
-     
-                        <div className="breakCont" key={props.postID}>
+        <div>     
+            <div className="breakCont" key={props.postID}>
+                <div className="breakingTitle">
+                    <p className="subheading heading-size-S">breaking news</p>
+                    <h1 className="heading">{props.headline}</h1>
+                </div>
+                <div className="breakingTop">
+                    <p className="subheading heading-size-S">{props.author1}</p>
 
-                            <div className="breakingTitle">
-                                <p className="subheading heading-size-S">breaking news</p>
-                                <h1 className="heading">{props.headline}</h1>
-                            </div>
-                            
-                            <div className="breakingTop">
-                                <p className="subheading heading-size-S">{props.author1}</p>
-
-                                <p className="heading-size-S">{props.postDate}</p>
-                            
-                                {/* <div className="post-reactions-break subheading heading-size-S">
-                            
-                                    <div>
-                                    <img className="reaction-icon-size" src={follow} alt="follow"/>&nbsp; <p className="reaction-num">{props.comments}</p>
-                                    </div>&nbsp;&nbsp;
-                                    <div>
-                                        <img className="reaction-icon-size" src={thumbDown} alt="down"/>&nbsp; <p className="reaction-num">{props.dislikes}</p> 
-                                    </div>&nbsp;&nbsp;
-                                    <div>
-                                        <img className="reaction-icon-size" src={thumbUp} alt="up"/> &nbsp; <p className="reaction-num">{props.likes}</p>
-                                        
-                                    </div>
-
-                                </div> */}
-                            </div>
-                            
-                            <div className="content heading-size-S">
-                                {props.teaser.slice(0,200)}... <p onClick={handleOnClick} className="subheading read">read more</p>
-                            </div>
-                        
-                          
-                        </div>
-                        
-                    
-                        {/* </Carousel.Caption> */}
+                    <p className="heading-size-S">{props.postDate}</p>
                 
-                    {/* </Carousel.Item> */}
-                    </div>
+                    {/* <div className="post-reactions-break subheading heading-size-S">
+                
+                        <div>
+                        <img className="reaction-icon-size" src={follow} alt="follow"/>&nbsp; <p className="reaction-num">{props.comments}</p>
+                        </div>&nbsp;&nbsp;
+                        <div>
+                            <img className="reaction-icon-size" src={thumbDown} alt="down"/>&nbsp; <p className="reaction-num">{props.dislikes}</p> 
+                        </div>&nbsp;&nbsp;
+                        <div>
+                            <img className="reaction-icon-size" src={thumbUp} alt="up"/> &nbsp; <p className="reaction-num">{props.likes}</p>
+                            
+                        </div>
+
+                    </div> */}
+                </div>               
+                <div className="content heading-size-S">
+                    {props.teaser.slice(0,200)}... <p onClick={handleOnClick} className="subheading read">read more</p>
+                </div>
+            </div>
+        </div>
         </div>
     )
    }

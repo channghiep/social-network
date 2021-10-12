@@ -20,12 +20,8 @@ export default function FeaturedCard(props){
       };
       if(props.articleURL == undefined){
         return(
-            // <div>
-    
-            // <PostDetail open={open} clickClose={handleClose} postId={props.postID} author={props.authorName}/>
             <div key={props.key}>
-                <ShowDetail 
-                // openDe={open} clickClose={handleClose} 
+                <ShowDetail
                 openDe={props.open} clickClose={props.handleClose} handleOpen={props.handleOpen}
                 setScroll={props.setScroll}
                    key={props.key}
@@ -62,8 +58,6 @@ export default function FeaturedCard(props){
                                 <img className="reactIcon" src={thumbDown} alt="dislike"/> {props.dislikes}
                             </p>
                         </div>
-                        
-                        
                     </div>
                     
                 </div>
@@ -71,9 +65,6 @@ export default function FeaturedCard(props){
         )
       }else{
         return(
-            // <div>
-    
-            // <PostDetail open={open} clickClose={handleClose} postId={props.postID} author={props.authorName}/>
             <div key={props.key}>
                 <ShowDetail openDe={open} clickClose={handleClose} 
                    key={props.key}
@@ -102,18 +93,8 @@ export default function FeaturedCard(props){
                         <p className="size18">{props.postDate}</p>
                         </div>
                         <p className="subheading size14">{props.teaser}</p>
-                        <p style={{cursor:"pointer"}} onClick={handleOnClick} className="subheading read">Read more</p>
-                        {/* <div className="post-reactions size18 subheading">
-                            <p>
-                                <img className="reactIcon" src={follow} alt="comment"/> {props.comments}
-                                <img className="reactIcon" src={thumbUp} alt="like"/> {props.likes}
-                                <img className="reactIcon" src={thumbDown} alt="dislike"/> {props.dislikes}
-                            </p>
-                        </div> */}
-                        
-                        
-                    </div>
-                    
+                        <p style={{cursor:"pointer"}} onClick={handleOnClick} className="subheading read">Read more</p>                                            
+                    </div>                    
                 </div>
             </div>
         )
